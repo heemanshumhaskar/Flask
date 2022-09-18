@@ -1,0 +1,1 @@
+alert("Page has been successfully loaded.")

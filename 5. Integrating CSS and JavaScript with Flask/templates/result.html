@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+        <script type = 'text/javascript' src = "{{ url_for('static/script', filename = 'script.js') }}">
+
+        </script>
+    </head>
+    <h1>
+        Final Result
+    </h1>
+        <body>
+            <table>
+                {% for key, value in marks.items() %}
+                <tr>
+                    <th>{{ key }}</th>
+                    <th>{{ value }}</th>
+                </tr>
+                {% endfor %}
+            </table>
+        </body>
+</html>

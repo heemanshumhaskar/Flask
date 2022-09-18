@@ -1,0 +1,15 @@
+<html>
+    <h1>
+        Final Result
+    </h1>
+        <body>
+            <table>
+                {% for key, value in marks.items() %}
+                <tr>
+                    <th>{{ key }}</th>
+                    <th>{{ value }}</th>
+                </tr>
+                {% endfor %}
+            </table>
+        </body>
+</html>
